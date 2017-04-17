@@ -12,10 +12,9 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('nittro', 'Nittro builder Grunt task', function() {
       var Builder = require('nittro');
-      
+
       var builder = new Builder(this.options({
           baseDir: process.cwd(),
-          bowerDir: null,
           vendor: {},
           base: {},
           extras: {},

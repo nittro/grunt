@@ -31,7 +31,7 @@ grunt.initConfig({
                     // libraries from other vendors, such as jQuery...
                 ],
                 css: [
-                    // ... or Bootstrap3 etc.
+                    // ... or Twitter Bootstrap etc.
                 ]
             },
             
@@ -44,19 +44,21 @@ grunt.initConfig({
                 datetime: true,
                 neon: true,
                 di: true,
+                ajax: true,
                 forms: true, // note that including the forms component
                     // will automatically include the netteForms.js asset
-                ajax: true,
                 page: true,
-                storage: true,
+                flashes: true,
                 routing: true
             },
             extras: {
-                flashes: true,
+                checklist: true,
                 dialogs: true,
                 confirm: true,
                 dropzone: true,
-                paginator: true
+                paginator: true,
+                keymap: true,
+                storage: true
             },
             
             // other libraries to include after Nittro, e.g. your site's
@@ -69,7 +71,8 @@ grunt.initConfig({
                 
                 ]
             },
-            bootstrap: true, // true = generated bootstrap, otherwise provide a path
+            bootstrap: true, // true or object = generated bootstrap, otherwise
+                            // provide a path to your custom bootstrap script
             stack: true // include the _stack library
         },
         js: {
